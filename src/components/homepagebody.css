@@ -1,0 +1,141 @@
+.homepagebody-container {
+  width: 100%;
+  padding: 80px 0 10px 40px;
+  background: #f8fafc;
+  color: #0f172a;
+}
+.homepagebody-container .homepagebody-body-container {
+  width: 100%;
+  display: flex;
+}
+.homepagebody-body-container .homepagebody-body-text {
+  width: 40%;
+}
+.homepagebody-body-container .homepagebody-body-text h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+.homepagebody-body-container .homepagebody-body-text h1 span {
+  color: #0756ff;
+}
+.homepagebody-body-container .homepagebody-body-text h4 {
+  padding: 10px 0 10px;
+}
+.homepagebody-body-container .homepagebody-body-text h4 span {
+  color: #0756ff;
+  padding-left: 2px;
+}
+.homepagebody-body-container .homepagebody-body-text p {
+  max-width: 260px;
+  font-size: 14px;
+  color: #0f172a8c;
+}
+.homepagebody-body-text .homepagebody-body-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+.homepagebody-body-text .homepagebody-body-buttons .homepagebody-body-button1 {
+  background: #0d5bff;
+  padding: 12px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: 500;
+}
+.homepagebody-body-text .homepagebody-body-buttons .homepagebody-body-button2 {
+  padding: 12px 18px;
+  color: #0d5bff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border: 1px solid #0d5bff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+.homepagebody-body-text .homepagebody-body-stars-container {
+  display: flex;
+  gap: 5px;
+  padding-top: 8px;
+  align-items: center;
+}
+.homepagebody-body-text
+  .homepagebody-body-stars-container
+  .homepagebody-body-stars {
+  display: flex;
+  gap: 5px;
+  color: rgba(255, 255, 0, 0.637);
+}
+.homepagebody-body-text .homepagebody-body-stars-container span {
+  color: #0f172a8c;
+  padding-left: 5px;
+  font-size: 15px;
+}
+.homepagebody-body-container .homepagebody-body-image {
+  width: 60%;
+}
+.homepagebody-body-container .homepagebody-body-image img {
+  width: 100%;
+  height: 345px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+.homepagebody-container .homepagebody-body-icons-container {
+  width: 90%;
+  padding: 15px 0;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  margin-top: -2px;
+}
+.homepagebody-body-icons-container .homepagebody-body-icons-subcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.homepagebody-body-icons-subcontainer .homepagebody-body-icons {
+  display: flex;
+  align-items: center;
+  padding:0 20px ;
+  border-right: 1px solid rgba(15, 23, 42, 0.06);
+}
+.homepagebody-body-icons-subcontainer .no-border{
+  border-right: 0;
+}
+.homepagebody-body-icons-subcontainer .homepagebody-body-icon{
+  background-color:#0755ff1c ;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.homepagebody-body-icons-subcontainer
+  .homepagebody-body-icons
+  .homepagebody-body-icons-text
+  h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.homepagebody-body-icons-subcontainer
+  .homepagebody-body-icons
+  .homepagebody-body-icons-text
+  p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #0f172a8c;
+}
