@@ -80,3 +80,9 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 380px){
+.navbar-container nav .navbar-logo img{
+  margin-left: -22px;
+}
+}

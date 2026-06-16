@@ -4,5 +4,7 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   overflow-x:hidden ;
-   
+}
+.homepage{
+  background: #f8fafc;
 }

@@ -74,7 +74,7 @@
   .homepagebody-body-stars {
   display: flex;
   gap: 5px;
-  color: rgba(255, 255, 0, 0.637);
+  color: #fbbf24;
 }
 .homepagebody-body-text .homepagebody-body-stars-container span {
   color: #0f172a8c;
@@ -143,7 +143,7 @@
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   .homepagebody-container {
-    padding: 70px 0 10px 0;
+    padding: 60px 0 10px 0;
   }
 
   /* Stack: image on top, text below */
