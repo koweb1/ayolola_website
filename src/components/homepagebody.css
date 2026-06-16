@@ -1,13 +1,20 @@
+/* ══════════════════════════════
+   SHARED CONTAINER
+══════════════════════════════ */
 .homepagebody-container {
   width: 100%;
-  padding: 80px 0 10px 40px;
   background: #f8fafc;
   color: #0f172a;
   box-sizing: border-box;
 }
-.homepagebody-container .homepagebody-body-container {
+
+/* ══════════════════════════════
+   DESKTOP LAYOUT
+══════════════════════════════ */
+.homepagebody-body-container {
   width: 100%;
   display: flex;
+  padding: 80px 0 10px 40px;
 }
 .homepagebody-body-container .homepagebody-body-text {
   width: 40%;
@@ -21,7 +28,7 @@
   color: #0756ff;
 }
 .homepagebody-body-container .homepagebody-body-text h4 {
-  padding: 10px 0 10px;
+  padding: 10px 0;
 }
 .homepagebody-body-container .homepagebody-body-text h4 span {
   color: #0756ff;
@@ -44,7 +51,6 @@
   border: none;
   border-radius: 5px;
   font-size: 0.9rem;
-  margin-right: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -62,6 +68,7 @@
   font-weight: 500;
   font-size: 0.9rem;
   border-radius: 5px;
+  background: transparent;
 }
 .homepagebody-body-text .homepagebody-body-stars-container {
   display: flex;
@@ -69,9 +76,7 @@
   padding-top: 8px;
   align-items: center;
 }
-.homepagebody-body-text
-  .homepagebody-body-stars-container
-  .homepagebody-body-stars {
+.homepagebody-body-text .homepagebody-body-stars-container .homepagebody-body-stars {
   display: flex;
   gap: 5px;
   color: #fbbf24;
@@ -90,14 +95,16 @@
   object-fit: cover;
   border-radius: 5px 0 0 5px;
 }
-.homepagebody-container .homepagebody-body-icons-container {
+
+/* Desktop icons bar */
+.homepagebody-body-icons-container {
   width: 90%;
   padding: 15px 0;
   border-radius: 10px;
   background: #ffffff;
   box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
   border: 1px solid rgba(226, 232, 240, 0.8);
-  margin-top: -2px;
+  margin: 0 0 20px 40px;
 }
 .homepagebody-body-icons-container .homepagebody-body-icons-subcontainer {
   display: flex;
@@ -115,128 +122,202 @@
 }
 .homepagebody-body-icons-subcontainer .homepagebody-body-icon {
   background-color: #0755ff1c;
-  padding: 10px 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
-.homepagebody-body-icons-subcontainer
-  .homepagebody-body-icons
-  .homepagebody-body-icons-text
-  h4 {
+.homepagebody-body-icons-subcontainer .homepagebody-body-icons .homepagebody-body-icons-text h4 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 3px;
 }
-.homepagebody-body-icons-subcontainer
-  .homepagebody-body-icons
-  .homepagebody-body-icons-text
-  p {
+.homepagebody-body-icons-subcontainer .homepagebody-body-icons .homepagebody-body-icons-text p {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 3px;
   color: #0f172a8c;
 }
 
-/* ── MOBILE ── */
+/* Mobile layout hidden on desktop */
+.homepagebody-mobile {
+  display: none;
+}
+
+/* ══════════════════════════════
+   MOBILE LAYOUT
+══════════════════════════════ */
 @media (max-width: 768px) {
-  .homepagebody-container {
-    padding: 60px 0 10px 0;
+
+  /* Hide desktop layout */
+  .homepagebody-body-container {
+    display: none;
+  }
+  .homepagebody-body-icons-container {
+    display: none;
   }
 
-  /* Stack: image on top, text below */
-  .homepagebody-container .homepagebody-body-container {
-    flex-direction: column-reverse;
+  /* Show mobile layout */
+  .homepagebody-mobile {
+    display: block;
+    padding-top: 65px; /* clear fixed navbar */
   }
 
-  /* Image full width, no border radius */
-  .homepagebody-body-container .homepagebody-body-image {
+  /* Hero image with stars badge */
+  .homepagebody-mobile-image {
+    position: relative;
     width: 100%;
   }
-  .homepagebody-body-container .homepagebody-body-image img {
+  .homepagebody-mobile-image img {
     width: 100%;
-    height: 220px;
-    border-radius: 0;
+    height: 240px;
     object-fit: cover;
+    display: block;
   }
 
-  /* Text section full width with padding */
-  .homepagebody-body-container .homepagebody-body-text {
-    width: 100%;
-    padding: 20px 16px 16px;
-    box-sizing: border-box;
-  }
-  .homepagebody-body-container .homepagebody-body-text h1 {
-    font-size: 26px;
-    padding-top: 16px;
-  }
-  .homepagebody-body-container .homepagebody-body-text h4 {
-    font-size: 14px;
-  }
-  .homepagebody-body-container .homepagebody-body-text p {
-    max-width: 100%;
-    font-size: 13px;
-  }
-
-  /* Buttons: side by side, shrink to fit */
-  .homepagebody-body-text .homepagebody-body-buttons {
+  /* Stars badge overlapping image bottom */
+  .homepagebody-mobile-stars-badge {
+    position: absolute;
+    bottom: -22px;
+    left: 16px;
+    right: 16px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1);
+    display: flex;
+    align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+    padding: 10px 16px;
   }
-  .homepagebody-body-text .homepagebody-body-buttons .homepagebody-body-button1,
-  .homepagebody-body-text .homepagebody-body-buttons .homepagebody-body-button2 {
-    font-size: 0.8rem;
-    padding: 10px 12px;
-    gap: 8px;
-    margin-right: 0;
-  }
-
-  /* Stars */
-  .homepagebody-body-text .homepagebody-body-stars-container span {
-    font-size: 13px;
-  }
-
-  /* Icons box: full width, 2x2 grid */
-  .homepagebody-container .homepagebody-body-icons-container {
-    width: 100%;
-    border-radius: 0;
-    margin-top: 0;
-    padding: 16px;
-    box-sizing: border-box;
-  }
-  .homepagebody-body-icons-container .homepagebody-body-icons-subcontainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    justify-items: start;
-  }
-  .homepagebody-body-icons-subcontainer .homepagebody-body-icons {
-    border-right: none;
-    padding: 0;
-    align-items: flex-start;
-  }
-  .homepagebody-body-icons-subcontainer .homepagebody-body-icon {
-    margin-right: 10px;
+  .homepagebody-mobile-stars {
+    display: flex;
+    gap: 4px;
+    color: #fbbf24;
     flex-shrink: 0;
   }
-  .homepagebody-body-icons-subcontainer
-    .homepagebody-body-icons
-    .homepagebody-body-icons-text
-    h4 {
+  .homepagebody-mobile-stars-badge span {
     font-size: 13px;
+    color: #0f172a;
+    font-weight: 500;
   }
-  .homepagebody-body-icons-subcontainer
-    .homepagebody-body-icons
-    .homepagebody-body-icons-text
-    p {
+
+  /* Content block */
+  .homepagebody-mobile-content {
+    padding: 40px 16px 20px; /* 40px top to clear the stars badge */
+    text-align: center;
+  }
+  .homepagebody-mobile-content h1 {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.25;
+    margin: 0 0 12px;
+    color: #0f172a;
+  }
+  .homepagebody-mobile-content h1 span {
+    color: #0d5bff;
+  }
+  .homepagebody-mobile-content p {
+    font-size: 14px;
+    color: #0f172a8c;
+    line-height: 1.6;
+    margin: 0 0 20px;
+  }
+  .homepagebody-mobile-reliable {
+    color: #0d5bff !important;
+    font-weight: 600;
+  }
+
+  /* Stacked full-width buttons */
+  .homepagebody-mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .homepagebody-mobile-btn-primary {
+    width: 100%;
+    background: #0d5bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .homepagebody-mobile-btn-outline {
+    width: 100%;
+    background: transparent;
+    color: #0d5bff;
+    border: 1.5px solid #0d5bff;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* 3-column icons row */
+  .homepagebody-mobile-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    border-top: 1px solid #e2e8f0;
+    padding: 20px 12px;
+    margin-top: 8px;
+  }
+  .homepagebody-mobile-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    text-align: center;
+  }
+  .homepagebody-mobile-icon-item p {
     font-size: 11px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 1.3;
+    margin: 0;
+  }
+  .homepagebody-mobile-icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1.5px solid #d0deff;
+    background: #f0f4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .homepagebody-mobile-icon-divider {
+    width: 1px;
+    height: 60px;
+    background: #e2e8f0;
+    flex-shrink: 0;
   }
 }
 
 @media (max-width: 400px) {
-  .homepagebody-body-container .homepagebody-body-text h1 {
+  .homepagebody-mobile-content h1 {
     font-size: 22px;
+  }
+  .homepagebody-mobile-image img {
+    height: 200px;
+    
   }
 }
