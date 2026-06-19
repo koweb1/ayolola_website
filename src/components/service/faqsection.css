@@ -1,0 +1,41 @@
+.faq-section {
+  width: 100%;
+  padding: 90px 5%;
+  background: #ffffff;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #071c47;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.faq-description {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+
+  .faq-section {
+    padding: 70px 20px;
+  }
+
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+}

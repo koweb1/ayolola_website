@@ -1,0 +1,156 @@
+.services-hero {
+  width: 100%;
+  padding: 120px 5% 70px;
+  background: #ffffff;
+}
+
+.services-hero-content {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.services-hero-small-title {
+  color: #0d5bff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.services-hero-left h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #071c47;
+  margin: 15px 0;
+}
+
+.services-hero-left h1 span {
+  color: #0d5bff;
+}
+
+.services-hero-left p {
+  max-width: 520px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+.services-hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.hero-book-btn {
+  background: #0d5bff;
+  color: white;
+  border: none;
+  padding: 15px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 600;
+}
+
+.hero-call-btn {
+  background: transparent;
+  color: #0d5bff;
+
+  border: 1px solid #0d5bff;
+
+  padding: 15px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 600;
+}
+
+.hero-features {
+  margin-top: 45px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #071c47;
+  font-weight: 500;
+}
+
+.hero-feature svg {
+  color: #0d5bff;
+}
+
+.services-hero-right img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .services-hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero-left {
+    order: 2;
+  }
+
+  .services-hero-right {
+    order: 1;
+  }
+
+  .services-hero-left h1 {
+    font-size: 3rem;
+  }
+
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .services-hero {
+    padding: 100px 20px 50px;
+  }
+
+  .services-hero-left h1 {
+    font-size: 2.3rem;
+  }
+
+  .services-hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero-right img {
+    height: 350px;
+  }
+}

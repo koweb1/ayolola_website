@@ -1,0 +1,47 @@
+.process-step {
+  text-align: center;
+  max-width: 220px;
+}
+
+.process-step-circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #f3f7ff;
+  color: #0d5bff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+}
+
+.process-step span {
+  display: block;
+  margin-top: 16px;
+
+  color: #0d5bff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.process-line {
+  width: 60px;
+  height: 3px;
+  background: #0d5bff;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+
+.process-step h3 {
+  margin: 12px 0;
+  color: #071c47;
+  font-size: 1.15rem;
+}
+
+.process-step p {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}

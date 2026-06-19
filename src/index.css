@@ -8,3 +8,7 @@
 .homepage{
   background: #f8fafc;
 }
+.services-page {
+  width: 100%;
+  overflow-x: hidden;
+}

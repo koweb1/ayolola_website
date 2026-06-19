@@ -1,0 +1,48 @@
+.before-after-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #edf2f7;
+  transition: 0.3s ease;
+}
+
+.before-after-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 50, 143, 0.08);
+}
+
+.before-after-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.image-box span {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  background: #0d5bff;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.before-after-card h3 {
+  text-align: center;
+  padding: 20px;
+  color: #071c47;
+}

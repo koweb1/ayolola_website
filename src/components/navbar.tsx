@@ -1,5 +1,6 @@
 import "./navbar.css";
 import { useState } from "react";
+import { Link } from "react-router";
 import { LuCalendarDays } from "react-icons/lu";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoClose, IoCallOutline } from "react-icons/io5";
@@ -26,8 +27,12 @@ export default function NavBar() {
           </div>
 
           <ul>
-            <li>Home</li>
-            <li>Services</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
             <li>How It Work</li>
             <li>About Us</li>
             <li>Contact</li>
