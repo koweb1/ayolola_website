@@ -1,9 +1,4 @@
-/* ── DESKTOP ── */
-.navbar-container nav ul li a,
-.mobile-menu-links li a {
-  text-decoration: none;
-  color: inherit;
-}
+
 .navbar-container {
   width: 100%;
   background: #00328f;
@@ -54,6 +49,12 @@
   font-size: 1.05rem;
   padding: 0 5px;
   cursor: pointer;
+}
+.navbar-container nav ul li a,
+.mobile-menu-links li a {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
 }
 .navbar-container nav .nav-book-appointment button {
   background: #0d5bff;
