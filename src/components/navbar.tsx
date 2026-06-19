@@ -75,7 +75,7 @@ export default function NavBar() {
           </li>
           <li onClick={() => setMenuOpen(false)}>
             <MdMiscellaneousServices size={22} />
-            <Link to="/">Service</Link>
+            <Link to="/services">Service</Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
             <TbInfoCircle size={22} />
