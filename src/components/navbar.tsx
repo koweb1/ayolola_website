@@ -71,11 +71,11 @@ export default function NavBar() {
         <ul className="mobile-menu-links">
           <li onClick={() => setMenuOpen(false)}>
             <GoHome size={22} />
-            Home
+            <Link to="/">Home</Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
             <MdMiscellaneousServices size={22} />
-            Services
+            <Link to="/">Service</Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
             <TbInfoCircle size={22} />
