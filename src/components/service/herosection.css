@@ -158,22 +158,110 @@
 @media (max-width: 768px) {
 
   .services-hero {
-    padding: 90px 20px 0;
+    padding: 70px 0 0;
+    overflow-x: hidden;
   }
 
-  .services-hero-left h1 { font-size: 1.9rem; }
+  .services-hero-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
 
+  /* Image first, full width, no side padding */
+  .services-hero-right {
+    order: 1;
+    width: 100%;
+  }
+
+  .services-hero-right img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 0;
+  }
+
+  /* Text block centered, below image */
+  .services-hero-left {
+    order: 2;
+    width: 100%;
+    padding: 28px 20px 0;
+    text-align: center;
+  }
+
+  .services-hero-small-title {
+    text-align: left;
+  }
+
+  .services-hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .services-hero-left p {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  /* Stacked full-width buttons, like home page */
   .services-hero-buttons {
     flex-direction: column;
+    width: 100%;
   }
 
+  .hero-book-btn,
+  .hero-call-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  /* Feature strip — no overlap, plain block below buttons */
   .hero-features-strip {
-    grid-template-columns: 1fr;
-    margin-top: -15px;
-    padding: 20px;
+    margin: 24px 16px 0;
+    position: static;
+    box-shadow: none;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 0;
+    padding: 20px 0 0;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 16px;
+  }
+
+  .hero-feature {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .hero-feature-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .hero-feature-text h4 {
+    font-size: 0.85rem;
+  }
+
+  .hero-feature-text p {
+    font-size: 0.75rem;
   }
 
   .services-hero-spacer {
     height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services-hero-left h1 {
+    font-size: 1.6rem;
+  }
+
+  .services-hero-right img {
+    aspect-ratio: 16 / 11;
+  }
+
+  .hero-features-strip {
+    grid-template-columns: 1fr;
   }
 }
