@@ -8,14 +8,14 @@ import carImage from "../../assets/car_image.png";
 
 export default function CTASection() {
   return (
-    <motion.section
-      className="cta-section"
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <div className="cta-content">
+    <section className="cta-section">
+      <motion.div
+        className="cta-content"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="cta-left">
           <span className="cta-small-title">READY TO GET STARTED?</span>
 
@@ -47,7 +47,7 @@ export default function CTASection() {
         <div className="cta-right">
           <img src={carImage} alt="Vehicle Service" />
         </div>
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 }

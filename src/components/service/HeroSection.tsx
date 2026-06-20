@@ -1,17 +1,17 @@
 import "./herosection.css";
 import { motion } from "motion/react";
-import {fadeUp} from "../../animation/animate"
+import { fadeUp } from "../../animation/animate";
 import { LuCalendarDays } from "react-icons/lu";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineVerifiedUser, MdOutlineBuild } from "react-icons/md";
 import { TbEngine } from "react-icons/tb";
 import { PiTimerBold } from "react-icons/pi";
 
-import heroImage from "../../assets/car_image.png";
+import heroImage from "../../assets/services.png";
 
 export default function HeroSection() {
   return (
-    <motion.section className="services-hero">
+    <section className="services-hero">
       <div className="services-hero-content">
         <motion.div
           className="services-hero-left"
@@ -33,48 +33,71 @@ export default function HeroSection() {
 
           <div className="services-hero-buttons">
             <button className="hero-book-btn">
-              <LuCalendarDays size={20} />
+              <LuCalendarDays size={18} />
               Book an Appointment
             </button>
 
             <button className="hero-call-btn">
-              <IoCallOutline size={20} />
+              <IoCallOutline size={18} />
               Call Us Now
             </button>
           </div>
-
-          <div className="hero-features">
-            <div className="hero-feature">
-              <MdOutlineVerifiedUser size={22} />
-              <span>Certified Technicians</span>
-            </div>
-
-            <div className="hero-feature">
-              <MdOutlineBuild size={22} />
-              <span>Genuine Parts</span>
-            </div>
-
-            <div className="hero-feature">
-              <TbEngine size={22} />
-              <span>Advanced Diagnostics</span>
-            </div>
-
-            <div className="hero-feature">
-              <PiTimerBold size={22} />
-              <span>Fast Turnaround</span>
-            </div>
-          </div>
         </motion.div>
 
-        <motion.div
-          className="services-hero-right"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img src={heroImage} alt="" />
-        </motion.div>
+        <div className="services-hero-right">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <img src={heroImage} alt="" />
+          </motion.div>
+        </div>
       </div>
-    </motion.section>
+
+      <div className="hero-features-strip">
+        <div className="hero-feature">
+          <div className="hero-feature-icon">
+            <MdOutlineVerifiedUser size={28} />
+          </div>
+          <div className="hero-feature-text">
+            <h4>Certified Technicians</h4>
+            <p>Trained and experienced experts you can trust.</p>
+          </div>
+        </div>
+
+        <div className="hero-feature">
+          <div className="hero-feature-icon">
+            <MdOutlineBuild size={28} />
+          </div>
+          <div className="hero-feature-text">
+            <h4>Genuine Parts</h4>
+            <p>We use only genuine parts for lasting performance.</p>
+          </div>
+        </div>
+
+        <div className="hero-feature">
+          <div className="hero-feature-icon">
+            <TbEngine size={28} />
+          </div>
+          <div className="hero-feature-text">
+            <h4>Advanced Diagnostics</h4>
+            <p>Accurate tools to diagnose issues correctly.</p>
+          </div>
+        </div>
+
+        <div className="hero-feature">
+          <div className="hero-feature-icon">
+            <PiTimerBold size={28} />
+          </div>
+          <div className="hero-feature-text">
+            <h4>Fast Turnaround</h4>
+            <p>Quick, efficient service to get you back on the road.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="services-hero-spacer" />
+    </section>
   );
 }

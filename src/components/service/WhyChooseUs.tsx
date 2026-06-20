@@ -39,32 +39,33 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <motion.section
-      className="why-choose-us-section"
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <span className="section-small-title">WHY CHOOSE US</span>
+    <section className="why-choose-us-section">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <span className="section-small-title">WHY CHOOSE US</span>
 
-      <h2>Service You Can Trust</h2>
+        <h2>Service You Can Trust</h2>
 
-      <p className="why-choose-description">
-        We combine expert technicians, modern technology and exceptional
-        customer care to deliver reliable automotive solutions every time.
-      </p>
+        <p className="why-choose-description">
+          We combine expert technicians, modern technology and exceptional
+          customer care to deliver reliable automotive solutions every time.
+        </p>
 
-      <div className="why-choose-grid">
-        {features.map((feature, index) => (
-          <FeatureCard
-            key={index}
-            icon={feature.icon}
-            title={feature.title}
-            description={feature.description}
-          />
-        ))}
-      </div>
-    </motion.section>
+        <div className="why-choose-grid">
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 }

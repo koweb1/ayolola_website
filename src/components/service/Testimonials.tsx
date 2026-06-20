@@ -35,33 +35,34 @@ export default function Testimonials() {
   ];
 
   return (
-    <motion.section
-      className="testimonials-section"
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <span className="section-small-title">TESTIMONIALS</span>
+    <section className="testimonials-section">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <span className="section-small-title">TESTIMONIALS</span>
 
-      <h2>Trusted By Vehicle Owners</h2>
+        <h2>Trusted By Vehicle Owners</h2>
 
-      <p className="testimonials-description">
-        Hear what our satisfied customers have to say about their experience
-        with Ayolola Motors Limited.
-      </p>
+        <p className="testimonials-description">
+          Hear what our satisfied customers have to say about their experience
+          with Ayolola Motors Limited.
+        </p>
 
-      <div className="testimonials-grid">
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard
-            key={index}
-            image={testimonial.image}
-            name={testimonial.name}
-            vehicle={testimonial.vehicle}
-            review={testimonial.review}
-          />
-        ))}
-      </div>
-    </motion.section>
+        <div className="testimonials-grid">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={index}
+              image={testimonial.image}
+              name={testimonial.name}
+              vehicle={testimonial.vehicle}
+              review={testimonial.review}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 }

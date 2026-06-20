@@ -163,7 +163,7 @@
   /* Show mobile layout */
   .homepagebody-mobile {
     display: block;
-    padding-top: 65px; /* clear fixed navbar */
+    padding-top: 60px; /* clear fixed navbar */
   }
 
   /* Hero image with stars badge */

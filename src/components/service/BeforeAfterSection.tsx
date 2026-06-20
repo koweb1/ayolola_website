@@ -34,13 +34,13 @@ export default function BeforeAfterSection() {
   ];
 
   return (
-    <motion.section
-      className="before-after-section"
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
+    <section className="before-after-section">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
       <span className="section-small-title">REAL RESULTS</span>
 
       <h2>See The Difference</h2>
@@ -60,6 +60,7 @@ export default function BeforeAfterSection() {
           />
         ))}
       </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 }

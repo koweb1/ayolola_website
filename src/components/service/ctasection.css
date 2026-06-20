@@ -2,7 +2,7 @@
   width: 100%;
   background: #00328f;
   padding: 90px 5%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .cta-content {

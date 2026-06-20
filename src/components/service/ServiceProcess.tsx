@@ -49,33 +49,34 @@ export default function ServiceProcess() {
   ];
 
   return (
-    <motion.section
-      className="service-process-section"
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <span className="section-small-title">OUR PROCESS</span>
+    <section className="service-process-section">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <span className="section-small-title">OUR PROCESS</span>
 
-      <h2>Our Simple Service Process</h2>
+        <h2>Our Simple Service Process</h2>
 
-      <p className="process-description">
-        A straightforward process designed to provide transparency, speed and
-        quality service.
-      </p>
+        <p className="process-description">
+          A straightforward process designed to provide transparency, speed and
+          quality service.
+        </p>
 
-      <div className="process-container">
-        {steps.map((step, index) => (
-          <ProcessStep
-            key={index}
-            number={step.number}
-            icon={step.icon}
-            title={step.title}
-            description={step.description}
-          />
-        ))}
-      </div>
-    </motion.section>
+        <div className="process-container">
+          {steps.map((step, index) => (
+            <ProcessStep
+              key={index}
+              number={step.number}
+              icon={step.icon}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 }

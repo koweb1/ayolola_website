@@ -73,27 +73,28 @@ export default function ServiceCategories() {
   ];
 
   return (
-    <motion.section
-      className="service-categories-section"
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <span className="section-small-title">WHAT WE OFFER</span>
+    <section className="service-categories-section">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <span className="section-small-title">WHAT WE OFFER</span>
 
-      <h2>Our Service Categories</h2>
+        <h2>Our Service Categories</h2>
 
-      <div className="service-categories-grid">
-        {services.map((service, index) => (
-          <ServiceCard
-            key={index}
-            icon={service.icon}
-            title={service.title}
-            services={service.services}
-          />
-        ))}
-      </div>
-    </motion.section>
+        <div className="service-categories-grid">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              services={service.services}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 }

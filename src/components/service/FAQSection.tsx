@@ -43,11 +43,13 @@ export default function FAQSection() {
   ];
 
   return (
-    <motion.section className="faq-section" 
-    variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}>
+    <section className="faq-section">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
       <span className="section-small-title">FAQ</span>
 
       <h2>Frequently Asked Questions</h2>
@@ -62,6 +64,7 @@ export default function FAQSection() {
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 }

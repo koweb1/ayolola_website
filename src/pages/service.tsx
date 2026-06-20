@@ -1,3 +1,4 @@
+import NavBar from "../components/navbar" 
 import HeroSection from "../components/service/HeroSection";
 import ServiceCategories from "../components/service/ServiceCategories";
 import WhyChooseUs from "../components/service/WhyChooseUs";
@@ -10,20 +11,14 @@ import CTASection from "../components/service/CTASection";
 export default function ServicesPage() {
   return (
     <div className="services-page">
+      <NavBar />
       <HeroSection />
-
       <ServiceCategories />
-
       <WhyChooseUs />
-
       <ServiceProcess />
-
       <BeforeAfterSection />
-
       <Testimonials />
-
       <FAQSection />
-
       <CTASection />
     </div>
   );
