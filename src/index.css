@@ -15,3 +15,54 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.booking-page {
+  width: 100%;
+  background: #f7f9fc;
+}
+
+.booking-page__container {
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  margin-top: -90px; /* pulls the white card up to overlap the hero */
+  position: relative;
+  z-index: 5;
+}
+
+.booking-page__card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(10, 26, 60, 0.08);
+  padding: 36px;
+  box-sizing: border-box;
+}
+
+.booking-page__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .booking-page__container {
+    padding: 0 32px;
+  }
+
+  .booking-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-page__container {
+    padding: 0 16px;
+    margin-top: -70px;
+  }
+
+  .booking-page__card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+}

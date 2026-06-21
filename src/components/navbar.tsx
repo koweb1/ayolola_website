@@ -39,9 +39,11 @@ export default function NavBar() {
           </ul>
 
           <div className="nav-book-appointment">
-            <button>
-              <LuCalendarDays size={22} /> Book an Appointment
-            </button>
+            <Link to="/booking">
+              <button>
+                <LuCalendarDays size={22} /> Book an Appointment
+              </button>
+            </Link>
           </div>
 
           <div className="navbar-hamburger" onClick={() => setMenuOpen(true)}>
@@ -96,9 +98,11 @@ export default function NavBar() {
         </ul>
 
         <div className="mobile-menu-buttons">
-          <button className="mobile-menu-btn-primary">
-            <LuCalendarDays size={20} /> Book an Appointment
-          </button>
+          <Link to="/booking" onClick={() => setMenuOpen(false)}>
+            <button className="mobile-menu-btn-primary">
+              <LuCalendarDays size={20} /> Book an Appointment
+            </button>
+          </Link>
           <button className="mobile-menu-btn-outline">
             <IoCallOutline size={20} /> Call Us Now
           </button>

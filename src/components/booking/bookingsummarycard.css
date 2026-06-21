@@ -1,0 +1,93 @@
+.booking-summary-card {
+  background: #fff;
+  border: 1px solid #e2e6ee;
+  border-radius: 14px;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking-summary-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0a1a3c;
+  margin: 0 0 12px 0;
+}
+
+.booking-summary-card__rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-summary-card__divider {
+  height: 1px;
+  background: #e2e6ee;
+  margin: 12px 0;
+}
+
+.booking-summary-card__line-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.booking-summary-card__line-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.booking-summary-card__line-value {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0a1a3c;
+}
+
+.booking-summary-card__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9f0ff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 16px 0 20px 0;
+}
+
+.booking-summary-card__total-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0a1a3c;
+}
+
+.booking-summary-card__total-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0d5bff;
+}
+
+.booking-summary-card__continue-btn {
+  width: 100%;
+  background: #0d5bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  transition: background 0.2s ease;
+}
+
+.booking-summary-card__continue-btn:hover:not(:disabled) {
+  background: #0a47cc;
+}
+
+.booking-summary-card__continue-btn:disabled {
+  background: #b9c5dd;
+  cursor: not-allowed;
+}

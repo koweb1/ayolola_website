@@ -253,6 +253,9 @@
 }
 
 @media (max-width: 400px) {
+    .services-hero {
+    padding: 60px 0 0;
+  }
   .services-hero-left h1 {
     font-size: 1.6rem;
   }
