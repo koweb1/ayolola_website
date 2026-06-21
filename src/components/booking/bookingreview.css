@@ -1,0 +1,41 @@
+.booking-review__heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0a1a3c;
+  margin: 0 0 4px 0;
+}
+
+.booking-review__subheading {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 24px 0;
+}
+
+.booking-review__section {
+  border-bottom: 1px solid #e2e6ee;
+  padding: 14px 0;
+}
+
+.booking-review__section:last-child {
+  border-bottom: none;
+}
+
+.booking-review__section h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8a93a6;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 8px 0;
+}
+
+.booking-review__section p {
+  font-size: 0.9rem;
+  color: #0a1a3c;
+  margin: 0 0 2px 0;
+}
+
+.booking-review__notes {
+  color: #6b7280;
+  font-style: italic;
+}

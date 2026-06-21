@@ -49,13 +49,17 @@
 }
 .navbar-container nav ul li a,
 .mobile-menu-links li a {
-  text-decoration: none;
+  text-decoration: none ;
   color: inherit;
   display: contents;
 }
+
 .navbar-container nav .nav-book-appointment {
   display: flex;
   align-items: center;
+}
+.nav-book-appointment a{
+  text-decoration: none;
 }
 .navbar-container nav .nav-book-appointment button {
   background: #0d5bff;

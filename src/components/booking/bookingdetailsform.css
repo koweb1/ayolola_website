@@ -1,0 +1,64 @@
+.booking-details-form {
+  width: 100%;
+}
+
+.booking-details-form__heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0a1a3c;
+  margin: 0 0 4px 0;
+}
+
+.booking-details-form__subheading {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 24px 0;
+}
+
+.booking-details-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.booking-details-form__row {
+  display: flex;
+  gap: 16px;
+}
+
+.booking-details-form__field label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #0a1a3c;
+}
+
+.booking-details-form__field input,
+.booking-details-form__field textarea {
+  border: 1.5px solid #e2e6ee;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #0a1a3c;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.booking-details-form__field input:focus,
+.booking-details-form__field textarea:focus {
+  outline: none;
+  border-color: #0d5bff;
+}
+
+.booking-details-form__field textarea {
+  resize: vertical;
+}
+
+@media (max-width: 600px) {
+  .booking-details-form__row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

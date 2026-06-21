@@ -1,0 +1,109 @@
+.datetime-selector {
+  width: 100%;
+}
+
+.datetime-selector__heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0a1a3c;
+  margin: 0 0 4px 0;
+}
+
+.datetime-selector__subheading {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 20px 0;
+}
+
+.datetime-selector__dates {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.datetime-selector__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  border: 1.5px solid #e2e6ee;
+  border-radius: 10px;
+  padding: 12px 4px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.datetime-selector__date:hover {
+  border-color: #0d5bff;
+}
+
+.datetime-selector__date--selected {
+  background: #0d5bff;
+  border-color: #0d5bff;
+}
+
+.datetime-selector__date--selected .datetime-selector__date-label,
+.datetime-selector__date--selected .datetime-selector__date-day {
+  color: #fff;
+}
+
+.datetime-selector__date-label {
+  font-size: 0.75rem;
+  color: #8a93a6;
+  font-weight: 600;
+}
+
+.datetime-selector__date-day {
+  font-size: 1.1rem;
+  color: #0a1a3c;
+  font-weight: 700;
+}
+
+.datetime-selector__time-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0a1a3c;
+  margin: 0 0 12px 0;
+}
+
+.datetime-selector__times {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.datetime-selector__time {
+  background: #fff;
+  border: 1.5px solid #e2e6ee;
+  border-radius: 10px;
+  padding: 12px 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0a1a3c;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.datetime-selector__time:hover {
+  border-color: #0d5bff;
+}
+
+.datetime-selector__time--selected {
+  background: #0d5bff;
+  border-color: #0d5bff;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .datetime-selector__dates {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .datetime-selector__times {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

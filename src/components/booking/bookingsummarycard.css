@@ -94,8 +94,8 @@
 
 @media (max-width: 380px) {
   .booking-summary-card {
-  padding: 24px 12px;
-  width: 100%;
- border: 0;
-}
+    padding: 24px 12px;
+    width: 100%;
+    border: 0;
+  }
 }
