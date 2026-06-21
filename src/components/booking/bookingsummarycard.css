@@ -91,3 +91,11 @@
   background: #b9c5dd;
   cursor: not-allowed;
 }
+
+@media (max-width: 380px) {
+  .booking-summary-card {
+  padding: 24px 12px;
+  width: 100%;
+ 
+}
+}

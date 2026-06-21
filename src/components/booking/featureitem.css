@@ -48,3 +48,15 @@
     max-width: 130px;
   }
 }
+@media (max-width: 400px){
+.feature-item__title {
+  font-size: 0.85rem;
+}
+.feature-item__description {
+  font-size: 0.75rem;
+}
+.feature-item__icon {
+  width: 35px;
+  height: 35px;
+}
+}

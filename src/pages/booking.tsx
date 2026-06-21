@@ -162,7 +162,7 @@ const BookingPage: React.FC = () => {
                 {
                   icon: <MapPinIcon />,
                   label: "Location",
-                  value: "AutoFix Workshop, 123 Auto Street, Mechanic City",
+                  value: "Ayolola Motor's Ltd 129 Bode Thomas Street Surulere",
                 },
               ]}
               duration={duration}
