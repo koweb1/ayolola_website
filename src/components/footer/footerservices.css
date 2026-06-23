@@ -1,0 +1,39 @@
+.footer-services-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-services-mobile {
+  display: none;
+}
+
+.footer-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-services-list li {
+  color: #ffffff99;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-services-list li:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-services-desktop {
+    display: none;
+  }
+
+  .footer-services-mobile {
+    display: block;
+  }
+}

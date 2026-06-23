@@ -1,0 +1,46 @@
+.footer-quicklinks-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-quicklinks-mobile {
+  display: none;
+}
+
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-quicklinks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-quicklinks-list li a {
+  text-decoration: none;
+  color: #ffffff99;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-quicklinks-list li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-quicklinks-desktop {
+    display: none;
+  }
+
+  .footer-quicklinks-mobile {
+    display: block;
+  }
+}

@@ -15,6 +15,7 @@ import BookingSummaryCard from "../components/booking/BookingSummaryCard";
 import TrustFeaturesStrip from "../components/booking/TrustFeaturesStrip";
 import { type FeatureItemProps } from "../components/booking/FeatureItem";
 import NavBar from "../components/navbar";
+import Footer from "../components/footer/footer";
 
 /* ---- Inline icons (swap for your icon library if preferred) ---- */
 const StethoscopeIcon = () => (
@@ -400,6 +401,7 @@ const BookingPage: React.FC = () => {
       </div>
 
       <TrustFeaturesStrip features={features} />
+      <Footer />
     </div>
   );
 };
