@@ -1,0 +1,82 @@
+.contact-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  background-color: green;
+}
+
+.contact-hero__image {
+  margin-top: -5px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text sits on top of the dark-blue left portion of the image */
+.contact-hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 5%; /* matches navbar padding */
+
+  box-sizing: border-box;
+}
+
+.contact-hero__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #4a90d9;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.contact-hero__heading {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.contact-hero__subtext {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-hero {
+    margin-top: 70px;
+  }
+
+  .contact-hero__image {
+    /* push image to the right so mechanic is visible */
+    object-position: 70% center;
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .contact-hero__content {
+    width: 60%;
+    padding: 0 20px;
+  }
+
+  .contact-hero__heading {
+    font-size: 1.2rem;
+  }
+
+  .contact-hero__subtext {
+    font-size: 0.8rem;
+  }
+}

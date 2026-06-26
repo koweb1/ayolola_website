@@ -1,0 +1,126 @@
+.contact-info-bar {
+  width: 100%;
+  background: transparent;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0;
+}
+
+.contact-info-bar__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #e8edf4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Card */
+.contact-info-bar__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 24px 20px 24px 30px;
+  background: #ffffff;
+  border-right: 1px solid #e8edf4;
+}
+
+.contact-info-bar__card:last-child {
+  border-right: none;
+}
+
+/* Icon */
+.contact-info-bar__icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: #0d5bff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.contact-info-bar__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-info-bar__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.contact-info-bar__primary {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.contact-info-bar__secondary {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-info-bar__link {
+  font-size: 0.85rem;
+  color: #0d5bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-info-bar__link:hover {
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .contact-info-bar__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info-bar__card:nth-child(2) {
+    border-right: none;
+  }
+
+  .contact-info-bar__card:nth-child(1),
+  .contact-info-bar__card:nth-child(2) {
+    border-bottom: 1px solid #e8edf4;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-info-bar {
+    margin-top: -24px;
+    padding: 0 20px;
+  }
+
+  .contact-info-bar__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info-bar__card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 14px;
+  }
+
+  .contact-info-bar__primary {
+    font-size: 0.85rem;
+  }
+}

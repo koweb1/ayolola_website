@@ -1,0 +1,25 @@
+.contact-page {
+  width: 100%;
+}
+
+.contact-three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  padding: 20px 20px 60px;
+  box-sizing: border-box;
+  background: #ffffff;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .contact-three-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-three-col {
+    grid-template-columns: 1fr;
+  }
+}
