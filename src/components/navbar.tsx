@@ -103,9 +103,13 @@ export default function NavBar() {
               <LuCalendarDays size={20} /> Book an Appointment
             </button>
           </Link>
+
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
           <button className="mobile-menu-btn-outline">
             <IoCallOutline size={20} /> Call Us Now
           </button>
+          </Link>
+
         </div>
 
         <div className="mobile-menu-socials">

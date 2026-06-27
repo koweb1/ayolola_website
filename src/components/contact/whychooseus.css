@@ -9,7 +9,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   color: #0a1628;
-  margin: 0 0 28px;
+  margin: 0 0 28px 2%;
 }
 
 /* Grid */
@@ -55,7 +55,6 @@
   font-size: 1.8rem;
   font-weight: 800;
   color: #0d5bff;
-  line-height: 1;
   margin-bottom: 6px;
 }
 

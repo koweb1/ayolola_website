@@ -8,6 +8,7 @@ import OtherWaysToReach from "../components/contact/OtherWaysToReach";
 import ContactFAQ from "../components/contact/ContactFAQ";
 import WhyChooseUs from "../components/contact/WhyChooseUs";
 import ContactCTA from "../components/contact/ContactCTA";
+import Footer from "../components/footer/footer";
 import "./contact.css";
 
 const ContactPage = () => {
@@ -28,6 +29,7 @@ const ContactPage = () => {
 
       <WhyChooseUs />
       <ContactCTA />
+      <Footer />
     </main>
   );
 };

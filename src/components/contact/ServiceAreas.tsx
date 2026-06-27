@@ -16,6 +16,10 @@ const areas = [
 const ServiceAreas = () => {
   return (
     <section className="service-areas">
+        <h2 className="service-areas__title">We Serve These Areas</h2>
+          <p className="service-areas__subtitle">
+            We proudly provide our services in:
+          </p>
       <div className="service-areas__inner">
         {/* Left — Text */}
         <motion.div
@@ -25,10 +29,7 @@ const ServiceAreas = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="service-areas__title">We Serve These Areas</h2>
-          <p className="service-areas__subtitle">
-            We proudly provide our services in:
-          </p>
+
           <ul className="service-areas__list">
             {areas.map((area, index) => (
               <motion.li
