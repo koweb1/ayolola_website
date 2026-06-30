@@ -72,18 +72,6 @@ export default function TrustHighlights() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
         >
           <div className="th-right-content">
-            <div className="th-copy-block">
-              <span className="th-eyebrow">EXPERT CARE. EVERY TIME</span>
-              <h2 className="th-heading">
-                Your Toyota or Volkswagen
-                <br />
-                is in safe hands.
-              </h2>
-              <p className="th-subtext">
-                Skilled technicians. Trusted by thousands of happy customers.
-              </p>
-            </div>
-
             <div className="th-photo-wrapper">
               <img
                 src={mechanicImage}
@@ -96,6 +84,18 @@ export default function TrustHighlights() {
                   Toyota & Volkswagen Certified Specialist
                 </span>
               </div>
+            </div>
+
+            <div className="th-copy-block">
+              <span className="th-eyebrow">EXPERT CARE. EVERY TIME</span>
+              <h2 className="th-heading">
+                Your Toyota or Volkswagen
+                <br />
+                is in safe hands.
+              </h2>
+              <p className="th-subtext">
+                Skilled technicians. Trusted by thousands of happy customers.
+              </p>
             </div>
           </div>
         </motion.div>

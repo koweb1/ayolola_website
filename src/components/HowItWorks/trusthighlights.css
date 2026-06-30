@@ -71,13 +71,16 @@
 
 .th-right-content {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 24px;
 }
 
 .th-photo-wrapper {
   flex-shrink: 0;
   width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .th-mechanic-photo {
@@ -119,14 +122,13 @@
 }
 
 .th-cert-badge {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 8px;
   background: #ffffff;
   border: 1px solid #e8eef8;
   border-radius: 8px;
   padding: 10px 14px;
-  margin-top: 4px;
   width: fit-content;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
@@ -147,6 +149,16 @@
 }
 
 @media (max-width: 400px) {
+
+  .hiw-cta-top-row,
+  .hiw-cta-bottom-row {
+    display: contents;
+  }
+
+  .hiw-cta-divider {
+    display: none;
+  }
+
   .th-section {
     padding: 48px 20px;
   }

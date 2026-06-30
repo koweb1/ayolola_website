@@ -1,7 +1,7 @@
 .hiw-cta-section {
-  background:#00205e; 
+  background: #00205e;
   margin: 0 40px 0 30px;
-  padding: 20px 40px;
+  padding: 28px 36px;
   border-radius: 14px 14px 0 0;
 }
 
@@ -9,25 +9,32 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Top row: headline + button ── */
+.hiw-cta-top-row {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 20px;
 }
 
 .hiw-cta-left {
-  flex: 1.4;
+  flex: 1;
   min-width: 0;
 }
 
 .hiw-cta-headline-row {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
 }
 
 .hiw-cta-cal-icon-wrapper {
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   background: rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   display: flex;
@@ -37,12 +44,12 @@
 }
 
 .hiw-cta-cal-icon {
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
 }
 
 .hiw-cta-heading {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   color: #ffffff;
   margin: 0 0 4px;
@@ -50,15 +57,51 @@
 }
 
 .hiw-cta-subtext {
-  font-size: 13.5px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.75);
   margin: 0;
 }
 
+.hiw-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #00205e;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hiw-cta-button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* ── Divider ── */
+.hiw-cta-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Bottom row: badges + phone in one line ── */
+.hiw-cta-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .hiw-cta-badges-col {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 28px;
   flex: 1;
   min-width: 0;
 }
@@ -67,10 +110,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 
 .hiw-cta-badge-icon {
-  font-size: 16px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.80);
   flex-shrink: 0;
 }
@@ -81,76 +125,37 @@
   font-weight: 500;
 }
 
-.hiw-cta-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  flex-shrink: 0;
-}
-
-.hiw-cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  color: #00205e;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.hiw-cta-button:hover {
-  opacity: 0.92;
-  transform: translateY(-1px);
-}
-
 .hiw-cta-phone-row {
   display: flex;
   align-items: center;
   gap: 7px;
+  flex-shrink: 0;
 }
 
 .hiw-cta-phone-icon {
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.70);
 }
 
 .hiw-cta-phone-text {
-  font-size: 13px;
+  font-size: 12.5px;
   color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
 }
 
 .hiw-cta-phone-text strong {
   color: #ffffff;
   font-weight: 700;
 }
-/* Badge icon wrapper */
+
+/* Badge icon wrapper — desktop now uses inline icon, no boxed wrapper */
 .hiw-cta-badge-icon-wrapper {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  display: contents;
 }
 
-/* Phone icon wrapper */
+/* Phone icon wrapper — desktop now uses inline icon, no boxed wrapper */
 .hiw-cta-phone-icon-wrapper {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  display: contents;
 }
 
 /* Button icon */
@@ -161,20 +166,31 @@
 
 @media (max-width: 400px) {
   .hiw-cta-section {
-    padding: 40px 20px;
+    margin: 0;
+    width: 100%;
+    padding: 32px 20px;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .hiw-cta-inner {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 0;
-    text-align: center;
   }
 
-  /* ── Left side — icon + heading + subtext stacked centered ── */
+  /* ── Top row becomes a vertical stack: icon/heading/subtext, then button ── */
+  .hiw-cta-top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
   .hiw-cta-left {
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .hiw-cta-headline-row {
@@ -184,7 +200,6 @@
     text-align: center;
   }
 
-  /* ── Large centered calendar icon ── */
   .hiw-cta-cal-icon-wrapper {
     width: 72px;
     height: 72px;
@@ -209,11 +224,8 @@
     margin-top: 4px;
   }
 
-  /* ── Book an Appointment button — full width ── */
   .hiw-cta-right {
     width: 100%;
-    align-items: stretch;
-    gap: 24px;
   }
 
   .hiw-cta-button {
@@ -223,34 +235,53 @@
     border-radius: 10px;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 24px;
   }
 
-  /* ── Trust badges — stacked rows with dividers ── */
+  /* ── Divider hidden on mobile ── */
+  .hiw-cta-divider {
+    display: none;
+  }
+
+  /* ── Bottom row: badges stacked, then phone bar ── */
+  .hiw-cta-bottom-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
   .hiw-cta-badges-col {
     width: 100%;
+    flex-direction: column;
     gap: 0;
-    order: 2;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .hiw-cta-badge {
     padding: 14px 4px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     gap: 14px;
+    width: 100%;
   }
 
   .hiw-cta-badge:last-child {
     border-bottom: none;
   }
 
-  /* ── Badge icon gets a rounded square background ── */
-  .hiw-cta-badge-icon {
-    display: none;
+  .hiw-cta-badge-icon-wrapper {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
   }
 
-  .hiw-cta-badge::before {
-    content: "";
-    display: none;
+  .hiw-cta-badge-icon {
+    font-size: 16px;
+    color: #ffffff;
   }
 
   .hiw-cta-badge-label {
@@ -259,27 +290,30 @@
     color: #ffffff;
   }
 
-  /* ── Phone bar at bottom ── */
   .hiw-cta-phone-row {
     width: 100%;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 16px 20px;
     gap: 16px;
     justify-content: flex-start;
   }
 
-  .hiw-cta-phone-icon {
-    font-size: 0;
+  .hiw-cta-phone-icon-wrapper {
+    display: flex;
     width: 44px;
     height: 44px;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+  }
+
+  .hiw-cta-phone-icon {
+    font-size: 18px;
+    color: #ffffff;
   }
 
   .hiw-cta-phone-text {

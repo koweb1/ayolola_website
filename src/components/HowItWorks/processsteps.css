@@ -147,13 +147,13 @@
 .ps-help-bar {
   display: none;
 }
+
 .ps-step-text-block {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
 }
-
 
 @media (max-width: 400px) {
   .ps-section {
@@ -198,6 +198,7 @@
     align-items: stretch;
     flex: unset;
     width: 100%;
+    overflow: hidden;
   }
 
   /* Hide horizontal arrow connector */
@@ -273,22 +274,21 @@
     white-space: normal;
   }
 
-  /* Need Help bar */
+  /* Need Help bar — stacked, button full width below */
   .ps-help-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     background: #00205e;
     border-radius: 12px;
-    padding: 16px 20px;
+    padding: 18px 20px;
     margin-top: 24px;
-    gap: 12px;
   }
 
   .ps-help-left {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 16px;
+    text-align: left;
   }
 
   .ps-help-icon-wrapper {
@@ -311,27 +311,28 @@
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0 0 2px;
+    margin: 0 0 3px;
   }
 
   .ps-help-sub {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.75);
     margin: 0;
+    line-height: 1.4;
   }
 
   .ps-help-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: #0d5bff;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-    padding: 10px 16px;
+    padding: 12px;
     border-radius: 8px;
     text-decoration: none;
-    white-space: nowrap;
-    flex-shrink: 0;
+    width: 100%;
   }
 }
