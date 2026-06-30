@@ -1,0 +1,352 @@
+.hiw-hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+ overflow: hidden;
+  contain: layout;
+}
+
+.hiw-image-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  
+}
+
+.hiw-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+
+
+.hiw-content-wrapper {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hiw-text-side {
+  position: relative;
+  max-width: 480px;
+  overflow: hidden;
+}
+
+.hiw-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hiw-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.hiw-heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hiw-subtext {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 380px;
+  margin: 0;
+}
+
+.hiw-cta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.hiw-btn-primary,
+.hiw-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hiw-btn-primary {
+  background: #00328f;
+  color: #ffffff;
+  border: 2px solid #00328f;
+}
+
+.hiw-btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.hiw-btn-primary:hover,
+.hiw-btn-outline:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.hiw-btn-icon {
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.hiw-dot-grid {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 80px;
+  height: 60px;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.35) 1.5px, transparent 1.5px);
+  background-size: 12px 12px;
+  pointer-events: none;
+}
+
+.hiw-stats-card {
+  position: absolute;
+  z-index: 3;
+  bottom: 32px;
+  right: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  min-width: 320px;
+}
+
+.hiw-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.hiw-brand-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.hiw-brand-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hiw-brand-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: #0a1128;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.hiw-brand-sub {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 2px 0 0;
+}
+
+.hiw-brand-divider {
+  width: 1px;
+  height: 40px;
+  background: #e5e7eb;
+  flex-shrink: 0;
+}
+
+.hiw-card-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 14px 0;
+}
+
+.hiw-stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.hiw-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.hiw-stat-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0d5bff;
+}
+
+.hiw-stat-label {
+  font-size: 11px;
+  color: #6b7280;
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 400px) {
+  .hiw-hero {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hiw-image-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    height: 100%;
+  }
+
+  .hiw-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .hiw-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 32, 94, 0.55) 0%,
+      rgba(0, 32, 94, 0.82) 40%,
+      rgba(0, 32, 94, 0.96) 100%
+    );
+  }
+
+  .hiw-content-wrapper {
+    position: relative;
+    z-index: 2;
+    height: auto;
+    max-width: 100%;
+    padding: 100px 20px 32px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hiw-text-side {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hiw-text-content {
+    gap: 14px;
+  }
+
+  .hiw-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: #0d5bff;
+  }
+
+  .hiw-heading {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .hiw-subtext {
+    font-size: 14px;
+    max-width: 100%;
+    line-height: 1.6;
+  }
+
+  .hiw-cta-row {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .hiw-btn-primary,
+  .hiw-btn-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .hiw-dot-grid {
+    display: none;
+  }
+
+  /* Stats card — pull out of absolute, flow naturally below content */
+  .hiw-stats-card {
+    position: relative;
+    z-index: 2;
+    bottom: auto;
+    right: auto;
+    min-width: unset;
+    width: calc(100% - 40px);
+    margin: 24px 20px 32px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  }
+
+  .hiw-brand-row {
+    justify-content: space-around;
+    gap: 12px;
+  }
+
+  .hiw-brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hiw-brand-name {
+    font-size: 13px;
+  }
+
+  .hiw-stats-row {
+    gap: 0;
+  }
+
+  .hiw-stat-item {
+    flex: 1;
+    border-right: 1px solid #e5e7eb;
+    padding: 0 8px;
+  }
+
+  .hiw-stat-item:last-child {
+    border-right: none;
+  }
+
+  .hiw-stat-value {
+    font-size: 22px;
+  }
+
+  .hiw-stat-label {
+    font-size: 10px;
+  }
+}

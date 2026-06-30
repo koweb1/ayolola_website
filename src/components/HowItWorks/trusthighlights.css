@@ -1,0 +1,347 @@
+.th-section {
+  background: #f4f7ff;
+  padding: 72px 40px;
+}
+
+.th-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.th-left-side {
+  flex: 1;
+  min-width: 0;
+}
+
+.th-trust-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.th-trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.th-trust-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  background: #e8eef8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.th-trust-icon {
+  font-size: 20px;
+  color: #0d5bff;
+}
+
+.th-trust-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.th-trust-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1128;
+  margin: 0;
+}
+
+.th-trust-description {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.th-right-side {
+  flex: 1;
+  min-width: 0;
+}
+
+.th-right-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.th-photo-wrapper {
+  flex-shrink: 0;
+  width: 160px;
+}
+
+.th-mechanic-photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.th-copy-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.th-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d5bff;
+  text-transform: uppercase;
+}
+
+.th-heading {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0a1128;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.th-subtext {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.th-cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e8eef8;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 4px;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.th-cert-icon {
+  font-size: 18px;
+  color: #0d5bff;
+  flex-shrink: 0;
+}
+
+.th-cert-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #0a1128;
+}
+.th-help-bar {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .th-section {
+    padding: 48px 20px;
+  }
+
+  .th-inner {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ── Hide left side grid on mobile — trust items move below ── */
+  .th-left-side {
+    order: 2;
+    width: 100%;
+  }
+
+  .th-trust-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* ── Each trust item becomes a full-width horizontal card ── */
+  .th-trust-item {
+    background: #ffffff;
+    border: 1px solid #e8eef8;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .th-trust-icon-wrapper {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .th-trust-icon {
+    font-size: 22px;
+  }
+
+  .th-trust-title {
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+
+  .th-trust-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* ── Right side moves to top ── */
+  .th-right-side {
+    order: 1;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .th-right-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+  }
+
+  /* ── Eyebrow + heading + subtext stacked centered ── */
+  .th-copy-block {
+    order: 1;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .th-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .th-heading {
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .th-subtext {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ── Mechanic photo card ── */
+  .th-photo-wrapper {
+    order: 2;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e8eef8;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .th-mechanic-photo {
+    width: 65%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ── Cert badge inside photo card ── */
+  .th-cert-badge {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #e8eef8;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 16px;
+    padding: 14px 16px;
+    justify-content: center;
+    background: #ffffff;
+  }
+
+  .th-cert-icon {
+    font-size: 18px;
+  }
+
+  .th-cert-label {
+    font-size: 13px;
+  }
+
+  /* ── Have Questions CTA bar — mobile only ── */
+  .th-help-bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: #00205e;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    gap: 12px;
+    order: 3;
+  }
+
+  .th-help-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .th-help-icon-wrapper {
+    width: 44px;
+    height: 44px;
+    background: #0d5bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .th-help-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .th-help-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 2px;
+  }
+
+  .th-help-sub {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+
+  .th-help-btn {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: #0d5bff;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}

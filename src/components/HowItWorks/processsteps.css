@@ -1,0 +1,337 @@
+.ps-section {
+  background: #ffffff;
+  padding: 72px 40px;
+}
+
+.ps-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ps-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #0d5bff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ps-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a1128;
+  margin: 0 0 12px;
+}
+
+.ps-heading-underline {
+  width: 48px;
+  height: 3px;
+  background: #0d5bff;
+  border-radius: 2px;
+  margin: 0 auto 52px;
+}
+
+.ps-steps-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.ps-step-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.ps-step-card {
+  flex: 1;
+  min-width: 0;
+  background: #f8faff;
+  border: 1px solid #e8eef8;
+  border-radius: 12px;
+  padding: 30px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.ps-step-number {
+  position: absolute;
+  top: -1px;
+  left: 14px;
+  width: 28px;
+  height: 28px;
+  background: #0d5bff;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(13, 91, 255, 0.35);
+}
+
+.ps-icon-circle {
+  width: 56px;
+  height: 56px;
+  background: #e8eef8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.ps-step-icon {
+  font-size: 22px;
+  color: #0d5bff;
+}
+
+.ps-step-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1128;
+  margin: 0;
+}
+
+.ps-step-description {
+  font-size: 12.5px;
+  color: #6b7280;
+  line-height: 1.55;
+  margin: 0;
+  text-align: center;
+}
+
+.ps-connector-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 28px;
+  position: relative;
+  margin-top: -24px;
+}
+
+.ps-connector-line {
+  width: 100%;
+  height: 1px;
+  border-top: 2px dashed #c7d6f5;
+  position: absolute;
+  left: 0;
+}
+
+.ps-connector-arrow {
+  position: absolute;
+  right: -4px;
+  color: #0d5bff;
+  line-height: 1;
+  background: #ffffff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #0d5bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding-left: 1px;
+}
+
+.ps-help-bar {
+  display: none;
+}
+.ps-step-text-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+
+@media (max-width: 400px) {
+  .ps-section {
+    padding: 48px 20px;
+    overflow: hidden;
+  }
+
+  .ps-inner {
+    text-align: center;
+  }
+
+  .ps-heading {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+
+  .ps-heading-underline {
+    margin: 0 auto 28px;
+  }
+
+  .ps-steps-row {
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    gap: 0;
+    padding-left: 28px;
+  }
+
+  /* Dotted vertical line on left */
+  .ps-steps-row::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    bottom: 16px;
+    border-left: 2px dashed #c7d6f5;
+    z-index: 0;
+  }
+
+  .ps-step-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    flex: unset;
+    width: 100%;
+  }
+
+  /* Hide horizontal arrow connector */
+  .ps-connector-wrapper {
+    display: none;
+  }
+
+  /* Card: horizontal row — number | icon | text block */
+  .ps-step-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 14px 14px 14px;
+    text-align: left;
+    margin-bottom: 12px;
+    position: relative;
+    background: #f8faff;
+    border: 1px solid #e8eef8;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Number badge — outside card on the left */
+  .ps-step-number {
+    position: absolute;
+    top: 50%;
+    left: -28px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    z-index: 1;
+    background: #0d5bff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(13, 91, 255, 0.35);
+    flex-shrink: 0;
+  }
+
+  /* Icon circle */
+  .ps-icon-circle {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-top: 0;
+  }
+
+  .ps-step-icon {
+    font-size: 18px;
+  }
+
+  /* Text block: title + description stacked */
+  .ps-step-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    text-align: left;
+    color: #0a1128;
+    white-space: normal;
+  }
+
+  .ps-step-description {
+    font-size: 12.5px;
+    text-align: left;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+    white-space: normal;
+  }
+
+  /* Need Help bar */
+  .ps-help-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00205e;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .ps-help-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ps-help-icon-wrapper {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ps-help-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .ps-help-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 2px;
+  }
+
+  .ps-help-sub {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+  }
+
+  .ps-help-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0d5bff;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}

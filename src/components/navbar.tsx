@@ -33,9 +33,13 @@ export default function NavBar() {
             <li>
               <Link to="/services">Services</Link>
             </li>
-            <li>How It Work</li>
+            <li>
+              <Link to="/how-it-works">How It Work</Link>
+            </li>
             <li>About Us</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
 
           <div className="nav-book-appointment">
@@ -84,16 +88,20 @@ export default function NavBar() {
             </Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
-            <TbInfoCircle size={22} />
-            How It Works
+            <Link to="/how-it-works">
+              <TbInfoCircle size={22} />
+              How It Works
+            </Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
             <BsPeopleFill size={22} />
             About Us
           </li>
           <li onClick={() => setMenuOpen(false)}>
-            <IoCallOutline size={22} />
-            Contact Us
+            <Link to="/contact">
+              <IoCallOutline size={22} />
+              Contact Us
+            </Link>
           </li>
         </ul>
 
@@ -105,11 +113,10 @@ export default function NavBar() {
           </Link>
 
           <Link to="/contact" onClick={() => setMenuOpen(false)}>
-          <button className="mobile-menu-btn-outline">
-            <IoCallOutline size={20} /> Call Us Now
-          </button>
+            <button className="mobile-menu-btn-outline">
+              <IoCallOutline size={20} /> Call Us Now
+            </button>
           </Link>
-
         </div>
 
         <div className="mobile-menu-socials">

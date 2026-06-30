@@ -1,0 +1,297 @@
+.hiw-cta-section {
+  background:#00205e; 
+  margin: 0 40px 0 30px;
+  padding: 20px 40px;
+  border-radius: 14px 14px 0 0;
+}
+
+.hiw-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hiw-cta-left {
+  flex: 1.4;
+  min-width: 0;
+}
+
+.hiw-cta-headline-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.hiw-cta-cal-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hiw-cta-cal-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.hiw-cta-heading {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px;
+  line-height: 1.2;
+}
+
+.hiw-cta-subtext {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.hiw-cta-badges-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.hiw-cta-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hiw-cta-badge-icon {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.80);
+  flex-shrink: 0;
+}
+
+.hiw-cta-badge-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.hiw-cta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.hiw-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #00205e;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hiw-cta-button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.hiw-cta-phone-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.hiw-cta-phone-icon {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.hiw-cta-phone-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hiw-cta-phone-text strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+/* Badge icon wrapper */
+.hiw-cta-badge-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Phone icon wrapper */
+.hiw-cta-phone-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Button icon */
+.hiw-cta-btn-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 400px) {
+  .hiw-cta-section {
+    padding: 40px 20px;
+  }
+
+  .hiw-cta-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+  }
+
+  /* ── Left side — icon + heading + subtext stacked centered ── */
+  .hiw-cta-left {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .hiw-cta-headline-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /* ── Large centered calendar icon ── */
+  .hiw-cta-cal-icon-wrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .hiw-cta-cal-icon {
+    font-size: 32px;
+  }
+
+  .hiw-cta-heading {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .hiw-cta-subtext {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  /* ── Book an Appointment button — full width ── */
+  .hiw-cta-right {
+    width: 100%;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .hiw-cta-button {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* ── Trust badges — stacked rows with dividers ── */
+  .hiw-cta-badges-col {
+    width: 100%;
+    gap: 0;
+    order: 2;
+    margin-bottom: 16px;
+  }
+
+  .hiw-cta-badge {
+    padding: 14px 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    gap: 14px;
+  }
+
+  .hiw-cta-badge:last-child {
+    border-bottom: none;
+  }
+
+  /* ── Badge icon gets a rounded square background ── */
+  .hiw-cta-badge-icon {
+    display: none;
+  }
+
+  .hiw-cta-badge::before {
+    content: "";
+    display: none;
+  }
+
+  .hiw-cta-badge-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  /* ── Phone bar at bottom ── */
+  .hiw-cta-phone-row {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 16px 20px;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .hiw-cta-phone-icon {
+    font-size: 0;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .hiw-cta-phone-text {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+  }
+
+  .hiw-cta-phone-text strong {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}

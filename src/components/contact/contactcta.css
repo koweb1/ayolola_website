@@ -1,13 +1,13 @@
 .contact-cta {
   width: 100%;
-  padding: 0 20px 0 35px;
+  padding: 0 30px 0 30px;
   box-sizing: border-box;
   background: #ffffff;
 }
 
 .contact-cta__inner {
   position: relative;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   overflow: hidden;
   min-height: 160px;
   display: flex;
@@ -24,7 +24,7 @@
   object-fit: cover;
   object-position: left center;
   display: block;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
 }
 
 /* Content sits on the right over the blue area */
