@@ -138,3 +138,99 @@
     display: none;
   }
 }
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .emergency-banner {
+    padding: 0 16px 36px 16px;
+  }
+
+  .emergency-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 18px 18px;
+    border-radius: 14px;
+    min-height: unset;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Truck image fills the whole card as background */
+  .emergency-banner__truck {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 65%;
+    border-radius: 14px;
+    z-index: 0;
+  }
+
+  /* Dark gradient so text stays readable over the photo */
+  .emergency-banner__inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      #00205e 0%,
+      #00205eee 35%,
+      #00205e99 60%,
+      #00205e40 100%
+    );
+    z-index: 0;
+    border-radius: 14px;
+  }
+
+  /* Text block sits above the image/gradient */
+  .emergency-banner__left {
+    position: relative;
+    z-index: 1;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .emergency-banner__icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .emergency-banner__title {
+    font-size: 1rem;
+    margin: 0 0 4px;
+    line-height: 1.3;
+  }
+
+  .emergency-banner__subtitle {
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+
+  /* White call card also above the image */
+  .emergency-banner__right {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-right: 0;
+    padding: 14px 18px;
+    border-radius: 10px;
+  }
+
+  .emergency-banner__call-label {
+    font-size: 0.75rem;
+  }
+
+  .emergency-banner__call-number {
+    font-size: 1.05rem;
+  }
+
+  .emergency-banner__btn {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+}

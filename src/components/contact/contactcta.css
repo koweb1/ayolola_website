@@ -104,3 +104,36 @@
     justify-content: center;
   }
 }
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .contact-cta {
+    padding: 0 0;
+  }
+
+  .contact-cta__inner {
+    min-height: 190px;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .contact-cta__content {
+    padding: 35px 16px;
+    gap: 14px;
+  }
+
+  .contact-cta__title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .contact-cta__subtitle {
+    font-size: 0.8rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+
+  .contact-cta__btn {
+    font-size: 0.85rem;
+    padding: 12px 20px;
+  }
+}
