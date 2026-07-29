@@ -7,6 +7,7 @@ import BeforeAfterSection from "../components/service/BeforeAfterSection";
 import Testimonials from "../components/service/Testimonials";
 import FAQSection from "../components/service/FAQSection";
 import CTASection from "../components/service/CTASection";
+import Footer from "../components/footer/footer";
 
 export default function ServicesPage() {
   return (
@@ -20,6 +21,7 @@ export default function ServicesPage() {
       <Testimonials />
       <FAQSection />
       <CTASection />
+      <Footer />
     </div>
   );
 }

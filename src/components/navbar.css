@@ -1,7 +1,7 @@
 .navbar-container {
   width: 100%;
   background: #00328f;
-  padding: 0 20px;
+  padding: 0 40px;
   color: #fff;
   position: fixed;
   top: 0;
@@ -248,6 +248,13 @@
 /* Backdrop */
 .mobile-menu-backdrop {
   display: none;
+}
+
+@media (max-width: 1115px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+  
 }
 
 /* ── RESPONSIVE ── */
